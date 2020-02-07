@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="float-right m-2">
+     <a href="{{ path('search_song') }}" class="btn btn-primary">Recherchez un titre</a>
+    </div>  
+
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenue sur MusicDB</h1>
+        <p class="lead">Une base de donnée d'artistes et de musiques</p>
+        <hr class="my-4">
+        <p>Pour commencer vous pouvez parcourir la liste des artistes et retouver leur albums et musiques</p>
+        <a class="btn btn-primary" href="{{ path('artist_list') }}" role="button">Explorer les artistes</a>
+    </div>
+
+{% endblock %}
